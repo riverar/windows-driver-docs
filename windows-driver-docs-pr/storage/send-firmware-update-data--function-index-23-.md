@@ -10,10 +10,8 @@ ms.localizationpriority: medium
 
 This function sends firmware data to the device.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
-
- 
+> [!Note]   
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
 ## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
 
@@ -101,10 +99,9 @@ This function sends firmware data to the device.
 
  
 
-&gt; \[!Note\]   
-&gt;This function shall compute the CRC of the Firmware Data and compare it with \**FW\_REGION\_CRC0* (3, 0x40) and \**FW\_REGION\_CRC1* (3, 0x41). If the values don’t match, the function shall fail with Function-Specific Error Code 3. Please refer to the Byte Addressable Energy Backed Interface JEDEC standard for the CRC algorithm specification.
+> [!Note]
+> This function shall compute the CRC of the Firmware Data and compare it with \*FW_REGION_CRC0 (3, 0x40) and \*FW_REGION_CRC1 (3, 0x41). If the values don't match, the function shall fail with Function-Specific Error Code 3. Please refer to the Byte Addressable Energy Backed Interface JEDEC standard for the CRC algorithm specification.
 
- 
 
 ## <span id="related_topics"></span>Related topics
 
