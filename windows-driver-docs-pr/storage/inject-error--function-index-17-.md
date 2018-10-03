@@ -10,10 +10,8 @@ ms.localizationpriority: medium
 
 This function injects errors in the NVDIMM-N module firmware. The purpose of this function is to enable software validation. The platform may choose to only enable error injection in specific scenarios, e.g. after the user configures a BIOS setting. The host may call [Query Error Injection Status (Function Index 16)](query-error-injection-status--function-index-16-.md) to learn whether or not the error injection functions are enabled.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
-
- 
+> [!Note]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
 ## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
 
@@ -96,10 +94,8 @@ This function injects errors in the NVDIMM-N module firmware. The purpose of thi
 
  
 
-&gt; \[!Note\]   
-&gt;Any errors that were successfully injected will remain injected when returning Function-Specific Error Code 2. If this function returns the Function-Specific Error Code 2, call [Get Injected Errors (Function Index 18)](get-injected-errors--function-index-18-.md) to retrieve which errors could not be injected.
-
- 
+> [!Note]
+> Any errors that were successfully injected will remain injected when returning Function-Specific Error Code 2. If this function returns the Function-Specific Error Code 2, call [Get Injected Errors (Function Index 18)](get-injected-errors--function-index-18-.md) to retrieve which errors could not be injected.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
